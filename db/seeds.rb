@@ -15,8 +15,8 @@ kaf = { name: "Kaf", address: "5 Hyndland St, Glasgow", phone_number: "010101010
 singlend = { name: "Singl-end", address: "263 Renfrew St, Glasgow", phone_number: "010101010101", category: "italian" }
 papercup = { name: "Papercup", address: "603 Great Western Road, Glasgow", phone_number: "010101010101", category: "french" }
 
-
-[ dishoom, pizza_east, kaf, singlend, papercup ].each do |attributes|
+restaurants = [ dishoom, pizza_east, kaf, singlend, papercup ]
+restaurants.each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end
